@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "svelte-kit sync && vite build",
+    "format": "prettier -w . --plugin-search-dir=.",
+    "check": "pnpm check:style && pnpm check:svelte",
+    "check:style": "prettier -c . --plugin-search-dir=.",
+    "check:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "packageManager": "pnpm@8.6.0",
+  "prettier": "mauss/prettier.json",
+  "devDependencies": {
+    "@ignatiusmb/styles": "^0.1.1",
+    "@sveltejs/adapter-vercel": "^3.0.1",
+    "@sveltejs/kit": "^1.20.1",
+    "mauss": "^0.5.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.1",
+    "svelte": "^3.59.1",
+    "svelte-check": "^3.4.3",
+    "syv": "^0.0.26",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
+}
